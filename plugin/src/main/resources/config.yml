@@ -1,0 +1,6 @@
+# Website URL, for example https://your-domain.example
+api-base-url: ""
+# Generate a long random key and set the same value as MINECRAFT_SERVER_PLUGIN_API_KEY in Vercel.
+api-key: "REPLACE_WITH_LONG_RANDOM_SECRET"
+poll-seconds: 15
+vote-events-enabled: true

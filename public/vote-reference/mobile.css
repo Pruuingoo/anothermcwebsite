@@ -1,0 +1,57 @@
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+body > div,
+main,
+nav,
+footer,
+[data-slot="tabs"],
+[role="tabpanel"] {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.overflow-x-auto {
+  max-width: 100%;
+  overscroll-behavior-inline: contain;
+  -webkit-overflow-scrolling: touch;
+}
+
+@media (max-width: 640px) {
+  .container {
+    width: 100%;
+    max-width: 100%;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  [data-slot="tabs-list"] {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  [data-slot="tabs-trigger"] {
+    min-width: 0;
+    white-space: normal;
+    text-align: center;
+  }
+
+  [role="tabpanel"] {
+    width: 100%;
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .overflow-x-auto table {
+    min-width: 540px;
+  }
+
+  [data-slot="card"] {
+    min-width: 0;
+    max-width: 100%;
+  }
+}

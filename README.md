@@ -1,6 +1,6 @@
 # AnotherMCWebsite
 
-A responsive, brand-neutral Minecraft server website template built with Next.js.
+A responsive Minecraft server website template built with Next.js. It retains the full multi-page layout, voting portal, staff area, store, blog, suggestions, and admin interface from the source design, with server-specific identity, addresses, and credentials replaced by configuration placeholders.
 
 ## Run locally
 
@@ -13,9 +13,9 @@ Open `http://localhost:3000`.
 
 ## Customize
 
-- Replace the placeholder server name, Java address, and Bedrock port in `app/page.tsx`.
-- Add your voting links in `app/vote/page.tsx`.
-- Replace `public/server-placeholder.svg` with your own server mark.
-- Update the page copy and theme in `app/` and `app/globals.css`.
+- Copy `.env.example` to `.env.local` and configure the server identity, address, and external services you intend to use.
+- Configure voting site URLs with `NEXT_PUBLIC_VOTE_SITE_1_URL` through `NEXT_PUBLIC_VOTE_SITE_4_URL`.
+- Replace `public/server-placeholder.svg` with your server mark.
+- Customize the page copy and theme in `data/site-pages.json`, `app/`, and `public/reference/custom.css`.
 
-The template ships without credentials or connected external services. Store, blog, and voting content are examples until you connect your own services and links.
+No real credentials, player data, staff identities, or provider account URLs are included. Database-backed pages show setup states until you connect your own Supabase project and apply a schema for your deployment. Payment processing is disabled until you configure your own provider credentials.

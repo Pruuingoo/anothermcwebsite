@@ -1,0 +1,8 @@
+name: MinecraftServerPointsBridge
+version: 1.0.0
+main: com.example.minecraftserver.points.MinecraftServerPointsBridge
+api-version: '1.20'
+softdepend: [Votifier]
+author: Your Server
+website: https://your-domain.example
+load: POSTWORLD
