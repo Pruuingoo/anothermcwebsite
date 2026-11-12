@@ -23,7 +23,7 @@ The jar is written under `build/libs/MinecraftServerPointsBridge-1.0.0.jar`.
 
 The plugin invokes only `playerpoints:points give <validated username> <verified amount>` for claimed orders. The key is separate from all Supabase credentials.
 
-When NuVotifier (Paper plugin name `Votifier`) is installed on the same server, the bridge also forwards received vote notifications to the website. The four enabled voting listings must send votes to NuVotifier and identify themselves as `Minecraft-MP`, `Minecraft Server List`, `TopG`, or `MineList`. The website accepts these notifications only with the same plugin bearer key. If vote events are not needed, set `vote-events-enabled: false` in the plugin config.
+When NuVotifier (Paper plugin name `Votifier`) is installed on the same server, the bridge also forwards received vote notifications to the website. Configure each listing's provider name with `MINECRAFT_SERVER_VOTE_SERVICE_1` through `MINECRAFT_SERVER_VOTE_SERVICE_4` so incoming vote notifications match the four generic voting-site slots. The website accepts these notifications only with the same plugin bearer key. If vote events are not needed, set `vote-events-enabled: false` in the plugin config.
 
 ## Delivery safety
 
